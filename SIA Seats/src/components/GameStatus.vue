@@ -11,7 +11,8 @@
 import { storeToRefs } from "pinia";
 import { watch, ref } from "vue";
 import { useSeatStore } from "../stores/SeatStore";
-const timerCount = ref(30);
+const START_TIME = 20;
+const timerCount = ref(START_TIME);
 
 const seatStore = useSeatStore();
 const { seats, isGameOver, rightGuesses } = storeToRefs(seatStore);
@@ -33,7 +34,7 @@ watch(
       setTimeout(() => {
         if (!isGameOver.value) {
           resetClickedSeats();
-          timerCount.value = 30;
+          timerCount.value = START_TIME;
           pauseTimer.value = false;
           resumeGame();
         }
