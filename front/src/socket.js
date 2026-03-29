@@ -9,7 +9,7 @@ export const state = reactive({
 const URL =
   process.env.NODE_ENV === "production" ? undefined : "http://localhost:8080";
 
-export const socket = io(URL, { autoConnect: false });
+export const socket = io(URL, { autoConnect: false, transports: ["polling"] });
 
 socket.on("connect", () => {
   state.connected = true;

@@ -1,21 +1,21 @@
 <template>
   <v-list dir="rtl" width="25vw" id="players" bg-color="rgba(0,0,0,0)">
     <v-list-item
-      v-for="({ username, isConnected }, i) in usersStatus"
-      :key="i"
+      v-for="{ username, isConnected } in usersStatus"
+      :key="username"
       :value="username"
     >
       <template v-slot:prepend>
         <v-icon
           class="ml-2"
           :icon="isConnected ? 'mdi-lan-connect' : 'mdi-lan-disconnect'"
-          :color="isConnected ? 'green-darken-4' : 'red-darken-4'"
+          :color="isConnected ? 'green-darken-4' : ''"
         ></v-icon>
       </template>
 
       <v-list-item-title
         id="player-name"
-        :class="`text-${isConnected ? 'green-darken-2' : 'red-darken-2'}`"
+        :class="`text-${isConnected ? 'green-darken-4' : ''}`"
         v-text="username"
       ></v-list-item-title>
     </v-list-item>

@@ -15,7 +15,7 @@
       <v-card-actions class="d-flex justify-center">
         <v-btn
           variant="tonal"
-          color="red"
+          color="blue"
           size="large"
           width="10vw"
           @click="selectUser"
@@ -34,16 +34,15 @@ import { socket } from "@/socket.js";
 const { updateUsername, updateConnectedUsers } = useUserStore();
 const dialog = ref(true);
 const names = ref([
-  "ירדן",
-  "יוגב",
-  "אמיר",
-  "סויסה",
-  "בר",
-  "שלי",
-  "נבו",
-  "קרשנוס",
-  "ערן",
-  "נועה",
+  "קרשין",
+  "הילה",
+  "שבור",
+  "לנקרי",
+  "זקרי",
+  "קומפי",
+  "יניב",
+  "פלג",
+  "שירה",
 ]);
 
 const errorMsg = ref("");

@@ -47,7 +47,7 @@ watch(isGameDisabled, () => {
   color: white;
   font-family: "Karantina", cursive;
   font-size: 3rem;
-  text-shadow: 3px 3px #ff0000;
+  text-shadow: 3px 3px #0000ff;
 }
 #logo-bg {
   z-index: -10;
@@ -60,7 +60,7 @@ watch(isGameDisabled, () => {
 
 #logo {
   position: fixed;
-  width: 10vw;
+  width: 15vw;
 }
 
 #logo-container:hover {

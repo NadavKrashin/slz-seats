@@ -50,6 +50,6 @@ watch(
   color: white;
   font-family: "Karantina", cursive;
   font-size: 3rem;
-  text-shadow: 3px 3px #ff0000;
+  text-shadow: 3px 3px #0000ff;
 }
 </style>

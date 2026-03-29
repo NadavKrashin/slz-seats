@@ -5,7 +5,8 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "*",
+    transports: ["polling"]
   },
 });
 
@@ -42,5 +43,5 @@ app.get("/", (req, res) => {
 });
 
 server.listen(8080, () => {
-  console.log("listening on 3000");
+  console.log("listening on 8080");
 });

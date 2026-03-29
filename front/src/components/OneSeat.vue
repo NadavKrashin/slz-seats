@@ -62,7 +62,7 @@ const chooseSeat = () => {
 <style scoped>
 .seat {
   font-family: "Karantina", cursive;
-  font-size: 6vw;
+  font-size: 3vw;
   z-index: 10;
 }
 .seat:hover {

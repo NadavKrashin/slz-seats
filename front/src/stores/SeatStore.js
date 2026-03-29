@@ -6,64 +6,58 @@ export const useSeatStore = defineStore("seat", () => {
   const seats = ref([
     {
       id: 1,
-      seatName: "נועה",
+      seatName: "קרשין",
       clickedName: "",
       color: "white",
     },
     {
       id: 2,
-      seatName: "סויסה",
+      seatName: "שבור",
       clickedName: "",
       color: "white",
     },
     {
       id: 3,
-      seatName: "בר",
+      seatName: "שירה",
       clickedName: "",
       color: "white",
     },
     {
       id: 4,
-      seatName: "יוגב",
+      seatName: "לנקרי",
       clickedName: "",
       color: "white",
     },
     {
       id: 5,
-      seatName: "קרשנוס",
+      seatName: "קומפי",
       clickedName: "",
       color: "white",
     },
     {
       id: 6,
-      seatName: "נבו",
+      seatName: "פלג",
       clickedName: "",
       color: "white",
     },
     {
       id: 7,
-      seatName: "ירדן",
+      seatName: "זקרי",
       clickedName: "",
       color: "white",
     },
     {
       id: 8,
-      seatName: "שלי",
+      seatName: "יניב",
       clickedName: "",
       color: "white",
     },
     {
       id: 9,
-      seatName: "אמיר",
+      seatName: "הילה",
       clickedName: "",
       color: "white",
-    },
-    {
-      id: 10,
-      seatName: "ערן",
-      clickedName: "",
-      color: "white",
-    },
+    }
   ]);
 
   const rightGuesses = computed(

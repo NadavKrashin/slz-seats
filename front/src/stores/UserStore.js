@@ -7,7 +7,7 @@ export const useUserStore = defineStore("user", () => {
     username.value = newUsername;
   };
 
-  const connectedUsers = ref([]);
+  const connectedUsers = ref([""]);
   const updateConnectedUsers = (users) => (connectedUsers.value = users);
   const removeConnectedUser = (username) =>
     (connectedUsers.value = connectedUsers.value.filter(
@@ -15,7 +15,7 @@ export const useUserStore = defineStore("user", () => {
     ));
 
   const hasGameStarted = computed(
-    () => new Set(connectedUsers.value).size === 10
+    () => new Set(connectedUsers.value).size === 9
   );
 
   return {
